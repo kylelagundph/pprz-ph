@@ -1,13 +1,14 @@
 {
   "siteName": "PPRZ.PH",
-  "tagline": "For Your Event",
+  "tagline": "Book PAPARAZZZZZI and be a star for a moment!",
   "location": "Philippines",
-  "email": "hello@pprz.ph",
-  "logo": "",
+  "email": "Paparazzzzziphotoman@gmail.com",
+  "logo": "/images/uploads/pprzlogo.png",
   "social": {
     "instagram": "@paparazzzzziph",
     "instagramUrl": "https://instagram.com/paparazzzzziph",
     "facebookUrl": "https://facebook.com/paparazzzzziph",
     "tiktokUrl": "https://tiktok.com/@paparazzzzziph"
-  }
+  },
+  "notifyEmail": "Paparazzzzziphotoman@gmail.com"
 }
