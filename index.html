@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Paparazzzzzi — Professional event photography and videography. Based in the Philippines. Onsite studio, camcorder, reels, bridal showers, red carpet, and more." />
   <meta property="og:title" content="Paparazzzzzi — For Your Event" />
-  <meta property="og:description" content="We capture the moments that matter. Based in the Philippines, available everywhere." />
+  <meta property="og:description" content="We capture the moments that matter. Available worldwide." />
   <meta property="og:type" content="website" />
   <title>PPRZ.PH — Paparazzzzzi</title>
 
@@ -43,7 +43,7 @@
           <a href="#about" class="nav__link">About</a>
           <a href="#services" class="nav__link">Services</a>
         </nav>
-        <span class="nav__location">Philippines</span>
+        
         <a href="#cta" class="nav__book">Book Now</a>
       </div>
 
@@ -70,7 +70,7 @@
     <div class="hero__bg" aria-hidden="true"></div>
 
     <div class="hero__content">
-      <p class="hero__eyebrow">PPRZ.PH — Est. Philippines</p>
+      <p class="hero__eyebrow">PPRZ.PH — Est. 2024</p>
       <h1 class="hero__title" id="heroTitle">
         PAPA<span>R</span>AZZZZZI
       </h1>
@@ -84,7 +84,7 @@
           <span class="hero__scroll-text">scroll</span>
           <div class="hero__scroll-line"></div>
         </div>
-        <p class="hero__location">Based in the Philippines<br />Available Everywhere</p>
+        <p class="hero__location">Available Worldwide</p>
       </div>
     </div>
   </section>
@@ -247,7 +247,7 @@
           <p class="about__text reveal">
             We capture the moments that matter. From <strong>red carpets</strong> to bridal showers, 
             <strong>onsite studios</strong> to wild afterparties — <strong>Paparazzzzzi</strong> brings the energy, 
-            the lens, and the vibe. Based in the Philippines, available everywhere.
+            the lens, and the vibe. Available worldwide.
           </p>
 
           <div class="about__stats reveal reveal-delay-2">
@@ -272,7 +272,7 @@
               <div class="about__image-icon">📷</div>
               <span class="about__image-text">Team Photo</span>
             </div>
-            <div class="about__badge">Est. Philippines</div>
+            <div class="about__badge">Est. 2024</div>
           </div>
         </div>
       </div>
@@ -403,12 +403,62 @@
           LET'S SHOOT<br /><span>TOGETHER</span>
         </h2>
         <div class="cta__actions reveal reveal-delay-2">
-          <a href="mailto:hello@pprz.ph" class="btn btn--primary">
+          <a href="#contact" class="btn btn--primary">
             Book Now ↗
           </a>
           <a href="https://instagram.com/paparazzzzziph" target="_blank" rel="noopener" class="btn btn--outline">
             @paparazzzzziph
           </a>
+        </div>
+
+        <!-- ============================================================
+             CONTACT FORM
+             ============================================================ -->
+        <div class="contact-form reveal" id="contact">
+          <p class="section-label" style="margin-bottom:24px; text-align:left;">Send Us a Message</p>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="fname">Full Name</label>
+                <input class="form__input" type="text" id="fname" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="phone">Phone Number</label>
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="+63 9XX XXX XXXX" />
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="femail">Email Address</label>
+              <input class="form__input" type="email" id="femail" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="service">Service</label>
+                <select class="form__input form__select" id="service" name="service">
+                  <option value="">Select a service...</option>
+                  <option>Onsite Studio</option>
+                  <option>Camcorder</option>
+                  <option>Photoman</option>
+                  <option>Reels</option>
+                  <option>Afterparty</option>
+                  <option>Bridal Shower</option>
+                  <option>Red Carpet</option>
+                  <option>Events</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="edate">Event Date</label>
+                <input class="form__input" type="date" id="edate" name="date" />
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__input form__textarea" id="message" name="message" placeholder="Tell us about your event..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary form__submit">Send Message ↗</button>
+          </form>
         </div>
 
         <div class="cta__divider reveal"></div>
@@ -430,8 +480,6 @@
           <div class="footer__right">
             <div class="footer__contact">
               <a href="mailto:hello@pprz.ph">hello@pprz.ph</a>
-              <span style="color: var(--color-border-light); margin: 0 8px;">|</span>
-              Philippines
             </div>
           </div>
         </footer>

@@ -6,6 +6,10 @@
   # This is a static site — no build command needed
   publish = "."
 
+# Form submission notifications — update email below
+[build.environment]
+  NETLIFY_EMAILS_DIRECTORY = "./emails"
+
 # Redirect for Netlify Identity (required for CMS)
 [[redirects]]
   from = "/admin/*"
