@@ -439,6 +439,20 @@
     </div>
   </section>
 
+  <!-- Netlify Identity Widget (handles invite/recovery tokens) -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
   <!-- JavaScript -->
   <script src="js/main.js"></script>
 </body>
