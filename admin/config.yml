@@ -43,6 +43,11 @@ collections:
           - { label: "Tagline", name: "tagline", widget: "string", default: "For Your Event" }
           - { label: "Location", name: "location", widget: "string", default: "Philippines" }
           - { label: "Contact Email", name: "email", widget: "string", default: "hello@pprz.ph" }
+          - label: "Form Notification Email"
+            name: "notifyEmail"
+            widget: "string"
+            default: "hello@pprz.ph"
+            hint: "Booking form submissions will be sent to this email address (update in Netlify Forms settings too)" 
           - label: "Logo"
             name: "logo"
             widget: "image"

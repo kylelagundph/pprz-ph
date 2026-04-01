@@ -431,3 +431,17 @@
   }
 
 })();
+
+// ============================================================
+// CONTACT FORM — success state
+// ============================================================
+(function() {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    // Let Netlify handle submission, show success after brief delay
+    setTimeout(function() {
+      form.classList.add('form--success');
+    }, 800);
+  });
+})();
