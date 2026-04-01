@@ -1,0 +1,123 @@
+# ============================================================
+# PPRZ.PH — Netlify CMS Configuration
+# ============================================================
+# For local development: run `npx netlify-cms-proxy-server` in
+# project root, then open http://localhost:8080/admin/
+#
+# For production: deploy to Netlify with Netlify Identity enabled.
+# Go to: Site > Identity > Enable Identity, then Invite Kyle.
+# ============================================================
+
+# --- BACKEND ---
+# Switch to `git-gateway` for production (comment out local_backend)
+backend:
+  name: git-gateway
+  branch: main
+
+# Uncomment for local dev (run `npx netlify-cms-proxy-server` first):
+# local_backend: true
+
+# --- MEDIA ---
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# --- SITE URL (update after deploying) ---
+# site_url: https://pprz.ph
+
+# ============================================================
+# COLLECTIONS
+# ============================================================
+collections:
+
+  # ---- SITE SETTINGS ----
+  - name: "settings"
+    label: "Site Settings"
+    format: json
+    files:
+
+      - name: "general"
+        label: "General Settings"
+        file: "_data/settings.json"
+        fields:
+          - { label: "Site Name", name: "siteName", widget: "string", default: "PPRZ.PH" }
+          - { label: "Tagline", name: "tagline", widget: "string", default: "For Your Event" }
+          - { label: "Location", name: "location", widget: "string", default: "Philippines" }
+          - { label: "Contact Email", name: "email", widget: "string", default: "hello@pprz.ph" }
+          - label: "Logo"
+            name: "logo"
+            widget: "image"
+            required: false
+            hint: "Upload a logo image (optional — site uses text logo by default)"
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Instagram Handle", name: "instagram", widget: "string", default: "@paparazzzzziph" }
+              - { label: "Instagram URL", name: "instagramUrl", widget: "string", default: "https://instagram.com/paparazzzzziph" }
+              - { label: "Facebook URL", name: "facebookUrl", widget: "string", default: "https://facebook.com/paparazzzzziph", required: false }
+              - { label: "TikTok URL", name: "tiktokUrl", widget: "string", default: "https://tiktok.com/@paparazzzzziph", required: false }
+
+      - name: "hero"
+        label: "Hero Section"
+        file: "_data/hero.json"
+        fields:
+          - { label: "Hero Title", name: "title", widget: "string", default: "PAPARAZZZZZI" }
+          - { label: "Eyebrow Text", name: "eyebrow", widget: "string", default: "PPRZ.PH — Est. Philippines" }
+          - { label: "Tagline", name: "tagline", widget: "text", default: "For Your Event — We make every moment legendary. From red carpets to intimate celebrations." }
+          - { label: "Location Text", name: "location", widget: "string", default: "Based in the Philippines\nAvailable Everywhere" }
+
+      - name: "about"
+        label: "About Section"
+        file: "_data/about.json"
+        fields:
+          - { label: "About Text", name: "text", widget: "markdown", default: "We capture the moments that matter. From **red carpets** to bridal showers, **onsite studios** to wild afterparties — **Paparazzzzzi** brings the energy, the lens, and the vibe. Based in the Philippines, available everywhere." }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Suffix", name: "suffix", widget: "string", default: "+" }
+              - { label: "Label", name: "label", widget: "string" }
+
+      - name: "services"
+        label: "Services"
+        file: "_data/services.json"
+        fields:
+          - label: "Services List"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Service Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text", required: false }
+
+  # ---- PORTFOLIO ----
+  - name: "portfolio"
+    label: "Portfolio Projects"
+    label_singular: "Project"
+    folder: "_data/portfolio"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    format: json
+    fields:
+      - { label: "Project Title", name: "title", widget: "string" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Onsite Studio", value: "Onsite Studio" }
+          - { label: "Camcorder", value: "Camcorder" }
+          - { label: "Photoman", value: "Photoman" }
+          - { label: "Reels", value: "Reels" }
+          - { label: "Afterparty", value: "Afterparty" }
+          - { label: "Bridal Shower", value: "Bridal Shower" }
+          - { label: "Red Carpet", value: "Red Carpet" }
+          - { label: "Events", value: "Events" }
+      - label: "Cover Image"
+        name: "image"
+        widget: "image"
+        hint: "Upload a cover photo for this project (recommended: 4:5 portrait ratio)"
+      - { label: "Sort Order", name: "order", widget: "number", default: 1, hint: "Lower numbers appear first" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: true }
+      - { label: "Date", name: "date", widget: "datetime", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }

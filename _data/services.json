@@ -1,0 +1,12 @@
+{
+  "services": [
+    { "name": "Onsite Studio", "description": "Professional studio setup at your venue." },
+    { "name": "Camcorder", "description": "Vintage and modern camcorder videography." },
+    { "name": "Photoman", "description": "Dedicated roving photographer for your event." },
+    { "name": "Reels", "description": "Short-form video content for social media." },
+    { "name": "Afterparty", "description": "Capture the best moments after the main event." },
+    { "name": "Bridal Shower", "description": "Intimate and stylish bridal shower coverage." },
+    { "name": "Red Carpet", "description": "Glamorous arrivals and red carpet moments." },
+    { "name": "Events", "description": "Full event documentation and coverage." }
+  ]
+}

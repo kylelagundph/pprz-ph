@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paparazzzzzi — Professional event photography and videography. Based in the Philippines. Onsite studio, camcorder, reels, bridal showers, red carpet, and more." />
+  <meta property="og:title" content="Paparazzzzzi — For Your Event" />
+  <meta property="og:description" content="We capture the moments that matter. Based in the Philippines, available everywhere." />
+  <meta property="og:type" content="website" />
+  <title>PPRZ.PH — Paparazzzzzi</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230a0a0a'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='14' fill='%23FFD700'>PP</text></svg>" />
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="page-loader__text">PPRZ</div>
+  </div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="mainNav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="PPRZ.PH Home">PPRZ</a>
+
+      <div class="nav__right">
+        <nav class="nav__links">
+          <a href="#portfolio" class="nav__link">Work</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#services" class="nav__link">Services</a>
+        </nav>
+        <span class="nav__location">Philippines</span>
+        <a href="#cta" class="nav__book">Book Now</a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+    <a href="#portfolio" class="nav__mobile-link">Work</a>
+    <a href="#about" class="nav__mobile-link">About</a>
+    <a href="#services" class="nav__mobile-link">Services</a>
+    <a href="#cta" class="nav__mobile-link" style="color: var(--color-accent);">Book Now ↗</a>
+  </div>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="home" aria-labelledby="heroTitle">
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">PPRZ.PH — Est. Philippines</p>
+      <h1 class="hero__title" id="heroTitle">
+        PAPA<span>R</span>AZZZZZI
+      </h1>
+
+      <div class="hero__bottom">
+        <p class="hero__tagline">
+          For Your Event — We make every moment legendary.
+          From red carpets to intimate celebrations.
+        </p>
+        <div class="hero__scroll" aria-hidden="true">
+          <span class="hero__scroll-text">scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+        <p class="hero__location">Based in the Philippines<br />Available Everywhere</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARQUEE STRIP
+       ============================================================ -->
+  <div class="marquee-wrapper" aria-hidden="true">
+    <div class="marquee-track">
+      <!-- Duplicated for seamless loop -->
+      <span class="marquee-item"><span>Onsite Studio</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Camcorder</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Photoman</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Reels</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Afterparty</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Bridal Shower</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Red Carpet</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Events</span><span class="dot"></span></span>
+      <!-- Duplicate -->
+      <span class="marquee-item"><span>Onsite Studio</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Camcorder</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Photoman</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Reels</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Afterparty</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Bridal Shower</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Red Carpet</span><span class="dot"></span></span>
+      <span class="marquee-item"><span>Events</span><span class="dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PORTFOLIO GRID
+       ============================================================ -->
+  <section class="portfolio" id="portfolio" aria-labelledby="portfolioTitle">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-label">Selected Work</p>
+          <h2 class="section-title" id="portfolioTitle">Portfolio</h2>
+        </div>
+        <span class="section-count">06 Projects</span>
+      </div>
+
+      <div class="portfolio__grid">
+
+        <!-- Card 1 -->
+        <article class="portfolio-card reveal reveal-delay-1" tabindex="0" role="article" aria-label="Red Carpet Night — Red Carpet">
+          <div class="portfolio-card__image">
+            <div class="portfolio-card__placeholder placeholder-1"></div>
+            <div class="portfolio-card__overlay" aria-hidden="true">
+              <span class="portfolio-card__overlay-tag">Red Carpet</span>
+              <div class="portfolio-card__overlay-icon">↗</div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">Red Carpet</p>
+            <h3 class="portfolio-card__title">Red Carpet Night</h3>
+          </div>
+          <span class="portfolio-card__number" aria-hidden="true">01</span>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="portfolio-card reveal reveal-delay-2" tabindex="0" role="article" aria-label="The Bridal Dream — Bridal Shower">
+          <div class="portfolio-card__image">
+            <div class="portfolio-card__placeholder placeholder-2"></div>
+            <div class="portfolio-card__overlay" aria-hidden="true">
+              <span class="portfolio-card__overlay-tag">Bridal Shower</span>
+              <div class="portfolio-card__overlay-icon">↗</div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">Bridal Shower</p>
+            <h3 class="portfolio-card__title">The Bridal Dream</h3>
+          </div>
+          <span class="portfolio-card__number" aria-hidden="true">02</span>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="portfolio-card reveal reveal-delay-3" tabindex="0" role="article" aria-label="Studio Sessions Vol.1 — Onsite Studio">
+          <div class="portfolio-card__image">
+            <div class="portfolio-card__placeholder placeholder-3"></div>
+            <div class="portfolio-card__overlay" aria-hidden="true">
+              <span class="portfolio-card__overlay-tag">Onsite Studio</span>
+              <div class="portfolio-card__overlay-icon">↗</div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">Onsite Studio</p>
+            <h3 class="portfolio-card__title">Studio Sessions Vol.1</h3>
+          </div>
+          <span class="portfolio-card__number" aria-hidden="true">03</span>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="portfolio-card reveal reveal-delay-2" tabindex="0" role="article" aria-label="After Midnight — Afterparty">
+          <div class="portfolio-card__image">
+            <div class="portfolio-card__placeholder placeholder-4"></div>
+            <div class="portfolio-card__overlay" aria-hidden="true">
+              <span class="portfolio-card__overlay-tag">Afterparty</span>
+              <div class="portfolio-card__overlay-icon">↗</div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">Afterparty</p>
+            <h3 class="portfolio-card__title">After Midnight</h3>
+          </div>
+          <span class="portfolio-card__number" aria-hidden="true">04</span>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="portfolio-card reveal reveal-delay-3" tabindex="0" role="article" aria-label="Reel Highlights — Reels">
+          <div class="portfolio-card__image">
+            <div class="portfolio-card__placeholder placeholder-5"></div>
+            <div class="portfolio-card__overlay" aria-hidden="true">
+              <span class="portfolio-card__overlay-tag">Reels</span>
+              <div class="portfolio-card__overlay-icon">↗</div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">Reels</p>
+            <h3 class="portfolio-card__title">Reel Highlights</h3>
+          </div>
+          <span class="portfolio-card__number" aria-hidden="true">05</span>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="portfolio-card reveal reveal-delay-4" tabindex="0" role="article" aria-label="Grand Events 2024 — Events">
+          <div class="portfolio-card__image">
+            <div class="portfolio-card__placeholder placeholder-6"></div>
+            <div class="portfolio-card__overlay" aria-hidden="true">
+              <span class="portfolio-card__overlay-tag">Events</span>
+              <div class="portfolio-card__overlay-icon">↗</div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">Events</p>
+            <h3 class="portfolio-card__title">Grand Events 2024</h3>
+          </div>
+          <span class="portfolio-card__number" aria-hidden="true">06</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section class="about" id="about" aria-labelledby="aboutTitle">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-label">Who We Are</p>
+          <h2 class="section-title" id="aboutTitle">About</h2>
+        </div>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__left">
+          <p class="about__text reveal">
+            We capture the moments that matter. From <strong>red carpets</strong> to bridal showers, 
+            <strong>onsite studios</strong> to wild afterparties — <strong>Paparazzzzzi</strong> brings the energy, 
+            the lens, and the vibe. Based in the Philippines, available everywhere.
+          </p>
+
+          <div class="about__stats reveal reveal-delay-2">
+            <div class="about__stat">
+              <div class="about__stat-number">500<span>+</span></div>
+              <div class="about__stat-label">Events Covered</div>
+            </div>
+            <div class="about__stat">
+              <div class="about__stat-number">8</div>
+              <div class="about__stat-label">Services</div>
+            </div>
+            <div class="about__stat">
+              <div class="about__stat-number">PH</div>
+              <div class="about__stat-label">Based In</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__right reveal reveal-delay-3">
+          <div class="about__image-area">
+            <div class="about__image-placeholder" aria-hidden="true">
+              <div class="about__image-icon">📷</div>
+              <span class="about__image-text">Team Photo</span>
+            </div>
+            <div class="about__badge">Est. Philippines</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES
+       ============================================================ -->
+  <section class="services" id="services" aria-labelledby="servicesTitle">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-label">What We Do</p>
+          <h2 class="section-title" id="servicesTitle">Services</h2>
+        </div>
+        <span class="section-count">08 Types</span>
+      </div>
+
+      <div class="services__content">
+        <!-- Tags row -->
+        <div class="services__tags reveal">
+          <div class="service-tag" tabindex="0">
+            <span class="tag-dot"></span>
+            <span>Onsite Studio</span>
+          </div>
+          <div class="service-tag" tabindex="0">
+            <span class="tag-dot"></span>
+            <span>Camcorder</span>
+          </div>
+          <div class="service-tag" tabindex="0">
+            <span class="tag-dot"></span>
+            <span>Photoman</span>
+          </div>
+          <div class="service-tag" tabindex="0">
+            <span class="tag-dot"></span>
+            <span>Reels</span>
+          </div>
+          <div class="service-tag" tabindex="0">
+            <span class="tag-dot"></span>
+            <span>Afterparty</span>
+          </div>
+          <div class="service-tag" tabindex="0">
+            <span class="tag-dot"></span>
+            <span>Bridal Shower</span>
+          </div>
+          <div class="service-tag" tabindex="0">
+            <span class="tag-dot"></span>
+            <span>Red Carpet</span>
+          </div>
+          <div class="service-tag" tabindex="0">
+            <span class="tag-dot"></span>
+            <span>Events</span>
+          </div>
+        </div>
+
+        <!-- Services list -->
+        <div class="services__list" role="list">
+          <div class="services__item reveal" role="listitem" tabindex="0">
+            <div class="services__item-left">
+              <span class="services__item-num" aria-hidden="true">01</span>
+              <span class="services__item-name">Onsite Studio</span>
+            </div>
+            <span class="services__item-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="services__item reveal reveal-delay-1" role="listitem" tabindex="0">
+            <div class="services__item-left">
+              <span class="services__item-num" aria-hidden="true">02</span>
+              <span class="services__item-name">Camcorder</span>
+            </div>
+            <span class="services__item-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="services__item reveal reveal-delay-2" role="listitem" tabindex="0">
+            <div class="services__item-left">
+              <span class="services__item-num" aria-hidden="true">03</span>
+              <span class="services__item-name">Photoman</span>
+            </div>
+            <span class="services__item-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="services__item reveal reveal-delay-3" role="listitem" tabindex="0">
+            <div class="services__item-left">
+              <span class="services__item-num" aria-hidden="true">04</span>
+              <span class="services__item-name">Reels</span>
+            </div>
+            <span class="services__item-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="services__item reveal reveal-delay-4" role="listitem" tabindex="0">
+            <div class="services__item-left">
+              <span class="services__item-num" aria-hidden="true">05</span>
+              <span class="services__item-name">Afterparty</span>
+            </div>
+            <span class="services__item-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="services__item reveal reveal-delay-5" role="listitem" tabindex="0">
+            <div class="services__item-left">
+              <span class="services__item-num" aria-hidden="true">06</span>
+              <span class="services__item-name">Bridal Shower</span>
+            </div>
+            <span class="services__item-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="services__item reveal reveal-delay-6" role="listitem" tabindex="0">
+            <div class="services__item-left">
+              <span class="services__item-num" aria-hidden="true">07</span>
+              <span class="services__item-name">Red Carpet</span>
+            </div>
+            <span class="services__item-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="services__item reveal" role="listitem" tabindex="0">
+            <div class="services__item-left">
+              <span class="services__item-num" aria-hidden="true">08</span>
+              <span class="services__item-name">Events</span>
+            </div>
+            <span class="services__item-arrow" aria-hidden="true">↗</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA + FOOTER
+       ============================================================ -->
+  <section class="cta" id="cta" aria-labelledby="ctaTitle">
+    <div class="container">
+      <div class="cta__inner">
+        <p class="cta__label reveal">Ready to book?</p>
+        <h2 class="cta__title reveal" id="ctaTitle">
+          LET'S SHOOT<br /><span>TOGETHER</span>
+        </h2>
+        <div class="cta__actions reveal reveal-delay-2">
+          <a href="mailto:hello@pprz.ph" class="btn btn--primary">
+            Book Now ↗
+          </a>
+          <a href="https://instagram.com/paparazzzzziph" target="_blank" rel="noopener" class="btn btn--outline">
+            @paparazzzzziph
+          </a>
+        </div>
+
+        <div class="cta__divider reveal"></div>
+
+        <footer class="footer reveal" role="contentinfo">
+          <div class="footer__left">
+            <div class="footer__logo">PPRZ</div>
+            <div class="footer__copy">© 2024 PPRZ.PH — Paparazzzzzi. All rights reserved.</div>
+          </div>
+
+          <div class="footer__center">
+            <nav class="footer__social" aria-label="Social links">
+              <a href="https://instagram.com/paparazzzzziph" target="_blank" rel="noopener" class="footer__social-link">Instagram</a>
+              <a href="https://facebook.com/paparazzzzziph" target="_blank" rel="noopener" class="footer__social-link">Facebook</a>
+              <a href="https://tiktok.com/@paparazzzzziph" target="_blank" rel="noopener" class="footer__social-link">TikTok</a>
+            </nav>
+          </div>
+
+          <div class="footer__right">
+            <div class="footer__contact">
+              <a href="mailto:hello@pprz.ph">hello@pprz.ph</a>
+              <span style="color: var(--color-border-light); margin: 0 8px;">|</span>
+              Philippines
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
